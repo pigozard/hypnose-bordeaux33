@@ -7,13 +7,42 @@ media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
-  - name: "infos"
-    label: "Informations cabinet"
+  - name: "index"
+    label: "Page d'accueil"
     files:
-      - label: "Contact & tarifs"
-        name: "contact"
-        file: "_data/contact.yml"
+      - label: "Contenu"
+        name: "index"
+        file: "_data/index.yml"
         fields:
-          - { label: "Tarif séance", name: "tarif", widget: "string" }
+          - { label: "Badge hero", name: "hero_badge", widget: "string" }
+          - { label: "Titre hero", name: "hero_title", widget: "string" }
+          - { label: "Titre hero (italique)", name: "hero_title_em", widget: "string" }
+          - { label: "Sous-titre hero", name: "hero_subtitle", widget: "text" }
+          - { label: "Accréditation 1", name: "trust_1", widget: "string" }
+          - { label: "Accréditation 2", name: "trust_2", widget: "string" }
+          - { label: "Accréditation 3", name: "trust_3", widget: "string" }
           - { label: "Adresse", name: "adresse", widget: "string" }
-          - { label: "Téléphone", name: "telephone", widget: "string" }
+          - { label: "Ville", name: "adresse_ville", widget: "string" }
+          - label: "Indications"
+            name: "indications"
+            widget: "list"
+            fields:
+              - { label: "Icône", name: "icon", widget: "string" }
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Texte", name: "texte", widget: "text" }
+          - label: "Étapes séance"
+            name: "etapes"
+            widget: "list"
+            fields:
+              - { label: "Numéro", name: "numero", widget: "string" }
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Texte", name: "texte", widget: "text" }
+          - label: "Témoignages"
+            name: "temoignages"
+            widget: "list"
+            fields:
+              - { label: "Texte", name: "texte", widget: "text" }
+              - { label: "Auteur", name: "auteur", widget: "string" }
+              - { label: "Sujet", name: "sujet", widget: "string" }
+          - { label: "CTA titre", name: "cta_titre", widget: "string" }
+          - { label: "CTA texte", name: "cta_texte", widget: "string" }
