@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: pigozard/hypnose-bordeaux33
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "infos"
+    label: "Informations cabinet"
+    files:
+      - label: "Contact & tarifs"
+        name: "contact"
+        file: "_data/contact.yml"
+        fields:
+          - { label: "Tarif séance", name: "tarif", widget: "string" }
+          - { label: "Adresse", name: "adresse", widget: "string" }
+          - { label: "Téléphone", name: "telephone", widget: "string" }
