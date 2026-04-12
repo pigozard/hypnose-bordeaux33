@@ -1,7 +1,9 @@
-backend:
+  backend:
   name: github
   repo: pigozard/hypnose-bordeaux33
   branch: main
+  squash_merges: true
+publish_mode: simple
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
