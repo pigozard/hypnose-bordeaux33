@@ -10,8 +10,7 @@ collections:
   - name: "accueil"
     label: "🏠 Page d'accueil"
     files:
-
-      - label: "Présentation principale"
+      - label: "Contenu de la page"
         name: "hero"
         file: "_data/index.yml"
         fields:
@@ -28,47 +27,51 @@ collections:
           - label: "Titre — mot en italique"
             name: "hero_title_em"
             widget: "string"
-            hint: "Le mot mis en valeur en vert. Ex: équilibre intérieur"
+            hint: "Le mot mis en valeur en vert"
 
           - label: "Phrase de présentation"
             name: "hero_subtitle"
             widget: "text"
             hint: "Quelques lignes qui décrivent votre approche"
 
-          - label: "Vos 3 accréditations"
-            name: "trust"
-            widget: "object"
-            hint: "Les trois badges de confiance sous votre présentation"
-            fields:
-              - { label: "Accréditation 1", name: "trust_1", widget: "string" }
-              - { label: "Accréditation 2", name: "trust_2", widget: "string" }
-              - { label: "Accréditation 3", name: "trust_3", widget: "string" }
+          - label: "Accréditation 1"
+            name: "trust_1"
+            widget: "string"
+            hint: "Ex: Adhérent SNH"
 
-          - label: "Adresse du cabinet"
+          - label: "Accréditation 2"
+            name: "trust_2"
+            widget: "string"
+
+          - label: "Accréditation 3"
+            name: "trust_3"
+            widget: "string"
+
+          - label: "Rue du cabinet"
             name: "adresse"
-            widget: "object"
-            fields:
-              - { label: "Rue", name: "adresse", widget: "string" }
-              - { label: "Ville", name: "adresse_ville", widget: "string" }
+            widget: "string"
+
+          - label: "Ville"
+            name: "adresse_ville"
+            widget: "string"
 
           - label: "Ce que je traite"
             name: "indications"
             widget: "list"
-            hint: "Les 4 domaines d'accompagnement affichés sur la page"
+            hint: "Les domaines d'accompagnement affichés sur la page"
             summary: "{{fields.titre}}"
             fields:
-              - { label: "Icône (emoji)", name: "icon", widget: "string", hint: "Copiez-collez un emoji. Ex: 🌿" }
+              - { label: "Icône (emoji)", name: "icon", widget: "string" }
               - { label: "Titre", name: "titre", widget: "string" }
               - { label: "Description", name: "texte", widget: "text" }
 
-          - label: "Les 3 étapes d'une séance"
+          - label: "Les étapes d'une séance"
             name: "etapes"
             widget: "list"
-            hint: "Les étapes affichées dans la section 'Comment ça se passe ?'"
             summary: "{{fields.titre}}"
             fields:
               - { label: "Numéro", name: "numero", widget: "string" }
-              - { label: "Titre de l'étape", name: "titre", widget: "string" }
+              - { label: "Titre", name: "titre", widget: "string" }
               - { label: "Description", name: "texte", widget: "text" }
 
           - label: "Témoignages"
@@ -79,12 +82,12 @@ collections:
             fields:
               - { label: "Témoignage", name: "texte", widget: "text" }
               - { label: "Prénom et initiale", name: "auteur", widget: "string", hint: "Ex: Sophie M." }
-              - { label: "Motif de consultation", name: "sujet", widget: "string", hint: "Ex: Troubles du sommeil" }
+              - { label: "Motif de consultation", name: "sujet", widget: "string" }
 
-          - label: "Bouton final"
-            name: "cta"
-            widget: "object"
-            hint: "Le bloc vert en bas de page"
-            fields:
-              - { label: "Titre", name: "cta_titre", widget: "string" }
-              - { label: "Sous-titre", name: "cta_texte", widget: "string" }
+          - label: "Titre du bouton final"
+            name: "cta_titre"
+            widget: "string"
+
+          - label: "Sous-titre du bouton final"
+            name: "cta_texte"
+            widget: "string"
