@@ -7,42 +7,84 @@ media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
-  - name: "index"
-    label: "Page d'accueil"
+  - name: "accueil"
+    label: "🏠 Page d'accueil"
     files:
-      - label: "Contenu"
-        name: "index"
+
+      - label: "Présentation principale"
+        name: "hero"
         file: "_data/index.yml"
         fields:
-          - { label: "Badge hero", name: "hero_badge", widget: "string" }
-          - { label: "Titre hero", name: "hero_title", widget: "string" }
-          - { label: "Titre hero (italique)", name: "hero_title_em", widget: "string" }
-          - { label: "Sous-titre hero", name: "hero_subtitle", widget: "text" }
-          - { label: "Accréditation 1", name: "trust_1", widget: "string" }
-          - { label: "Accréditation 2", name: "trust_2", widget: "string" }
-          - { label: "Accréditation 3", name: "trust_3", widget: "string" }
-          - { label: "Adresse", name: "adresse", widget: "string" }
-          - { label: "Ville", name: "adresse_ville", widget: "string" }
-          - label: "Indications"
+          - label: "Accroche courte"
+            name: "hero_badge"
+            widget: "string"
+            hint: "Le petit texte vert en haut. Ex: Hypnothérapeute à Bordeaux"
+
+          - label: "Titre — première ligne"
+            name: "hero_title"
+            widget: "string"
+            hint: "Ex: Retrouvez votre"
+
+          - label: "Titre — mot en italique"
+            name: "hero_title_em"
+            widget: "string"
+            hint: "Le mot mis en valeur en vert. Ex: équilibre intérieur"
+
+          - label: "Phrase de présentation"
+            name: "hero_subtitle"
+            widget: "text"
+            hint: "Quelques lignes qui décrivent votre approche"
+
+          - label: "Vos 3 accréditations"
+            name: "trust"
+            widget: "object"
+            hint: "Les trois badges de confiance sous votre présentation"
+            fields:
+              - { label: "Accréditation 1", name: "trust_1", widget: "string" }
+              - { label: "Accréditation 2", name: "trust_2", widget: "string" }
+              - { label: "Accréditation 3", name: "trust_3", widget: "string" }
+
+          - label: "Adresse du cabinet"
+            name: "adresse"
+            widget: "object"
+            fields:
+              - { label: "Rue", name: "adresse", widget: "string" }
+              - { label: "Ville", name: "adresse_ville", widget: "string" }
+
+          - label: "Ce que je traite"
             name: "indications"
             widget: "list"
+            hint: "Les 4 domaines d'accompagnement affichés sur la page"
+            summary: "{{fields.titre}}"
             fields:
-              - { label: "Icône", name: "icon", widget: "string" }
+              - { label: "Icône (emoji)", name: "icon", widget: "string", hint: "Copiez-collez un emoji. Ex: 🌿" }
               - { label: "Titre", name: "titre", widget: "string" }
-              - { label: "Texte", name: "texte", widget: "text" }
-          - label: "Étapes séance"
+              - { label: "Description", name: "texte", widget: "text" }
+
+          - label: "Les 3 étapes d'une séance"
             name: "etapes"
             widget: "list"
+            hint: "Les étapes affichées dans la section 'Comment ça se passe ?'"
+            summary: "{{fields.titre}}"
             fields:
               - { label: "Numéro", name: "numero", widget: "string" }
-              - { label: "Titre", name: "titre", widget: "string" }
-              - { label: "Texte", name: "texte", widget: "text" }
+              - { label: "Titre de l'étape", name: "titre", widget: "string" }
+              - { label: "Description", name: "texte", widget: "text" }
+
           - label: "Témoignages"
             name: "temoignages"
             widget: "list"
+            hint: "Les avis clients affichés sur la page"
+            summary: "{{fields.auteur}} — {{fields.sujet}}"
             fields:
-              - { label: "Texte", name: "texte", widget: "text" }
-              - { label: "Auteur", name: "auteur", widget: "string" }
-              - { label: "Sujet", name: "sujet", widget: "string" }
-          - { label: "CTA titre", name: "cta_titre", widget: "string" }
-          - { label: "CTA texte", name: "cta_texte", widget: "string" }
+              - { label: "Témoignage", name: "texte", widget: "text" }
+              - { label: "Prénom et initiale", name: "auteur", widget: "string", hint: "Ex: Sophie M." }
+              - { label: "Motif de consultation", name: "sujet", widget: "string", hint: "Ex: Troubles du sommeil" }
+
+          - label: "Bouton final"
+            name: "cta"
+            widget: "object"
+            hint: "Le bloc vert en bas de page"
+            fields:
+              - { label: "Titre", name: "cta_titre", widget: "string" }
+              - { label: "Sous-titre", name: "cta_texte", widget: "string" }
