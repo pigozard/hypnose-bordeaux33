@@ -1,50 +1,53 @@
-hero_badge: "Hypnothérapeute à Bordeaux"
-hero_title: "Retrouvez votre"
-hero_title_em: "équilibre intérieur"
-hero_subtitle: "Je vous accompagne pour dépasser vos blocages et retrouver vos ressources. En cabinet au cœur de Bordeaux ou en visio."
-
-trust_1: "Adhérent SNH"
-trust_2: "Maître Praticien certifié"
-trust_3: "+5 ans de pratique"
-
-adresse: "28 rue Scaliger"
-adresse_ville: "Bordeaux centre"
-
+hero_badge: Hypnothérapeute a Bordeaux
+hero_title: Retrouvez votre
+hero_title_em: équilibre intérieur
+hero_subtitle: Je vous accompagne pour dépasser vos blocages et retrouver vos
+  ressources. En cabinet au cœur de Bordeaux ou en visio.
+trust_1: Adhérent SNH
+trust_2: Maître Praticien certifié
+trust_3: +5 ans de pratique
+adresse: 28 rue Scaliger
+adresse_ville: Bordeaux centre
 indications:
-  - icon: "🌿"
-    titre: "Stress & anxiété"
-    texte: "Retrouvez un état de calme durable en agissant sur les mécanismes profonds de l'angoisse."
-  - icon: "🌙"
-    titre: "Troubles du sommeil"
-    texte: "Insomnie, apnées — une spécialité de mon cabinet avec un réseau médical expert."
-  - icon: "🚭"
-    titre: "Arrêt du tabac"
-    texte: "Un protocole en 2 séances pour se libérer durablement, sans substitut."
-  - icon: "💫"
-    titre: "Confiance & étapes de vie"
-    texte: "Phobies, deuil, perte de poids, préparation mentale — un accompagnement adapté."
-
+  - icon: 🌿
+    titre: Stress & anxiété
+    texte: Retrouvez un état de calme durable en agissant sur les mécanismes
+      profonds de l'angoisse.
+  - icon: 🌙
+    titre: Troubles du sommeil
+    texte: Insomnie, apnées — une spécialité de mon cabinet avec un réseau médical
+      expert.
+  - icon: 🚭
+    titre: Arrêt du tabac
+    texte: Un protocole en 2 séances pour se libérer durablement, sans substitut.
+  - icon: 💫
+    titre: Confiance & étapes de vie
+    texte: Phobies, deuil, perte de poids, préparation mentale — un accompagnement
+      adapté.
 etapes:
   - numero: "1"
-    titre: "Échange"
-    texte: "Vous m'expliquez votre situation. Nous définissons ensemble un objectif clair."
+    titre: Échange
+    texte: Vous m'expliquez votre situation. Nous définissons ensemble un objectif
+      clair.
   - numero: "2"
-    titre: "Transe guidée"
-    texte: "Je vous guide dans un état de conscience modifiée. Votre inconscient fait le travail."
+    titre: Transe guidée
+    texte: Je vous guide dans un état de conscience modifiée. Votre inconscient fait
+      le travail.
   - numero: "3"
-    titre: "Bilan"
-    texte: "On fait le point sur votre ressenti et on décide ensemble de la suite."
-
+    titre: Bilan
+    texte: On fait le point sur votre ressenti et on décide ensemble de la suite.
 temoignages:
-  - texte: "Après des années d'insomnie, j'ai retrouvé un sommeil réparateur en 3 séances. Benoît est très à l'écoute et met immédiatement en confiance."
-    auteur: "Sophie M."
-    sujet: "Troubles du sommeil"
-  - texte: "J'ai arrêté de fumer après le protocole en 2 séances. Ça fait maintenant 8 mois et je n'ai jamais repris. Je recommande vivement."
-    auteur: "Marc D."
-    sujet: "Arrêt du tabac"
-  - texte: "J'avais une phobie de l'avion qui m'empêchait de voyager. Grâce à Benoît, j'ai pu reprendre l'avion sereinement. Un vrai soulagement."
-    auteur: "Laura T."
-    sujet: "Phobie"
-
-cta_titre: "Prêt à franchir le pas ?"
-cta_texte: "Le premier rendez-vous est le plus important."
+  - texte: Après des années d'insomnie, j'ai retrouvé un sommeil réparateur en 3
+      séances. Benoît est très à l'écoute et met immédiatement en confiance.
+    auteur: Sophie M.
+    sujet: Troubles du sommeil
+  - texte: J'ai arrêté de fumer après le protocole en 2 séances. Ça fait maintenant
+      8 mois et je n'ai jamais repris. Je recommande vivement.
+    auteur: Marc D.
+    sujet: Arrêt du tabac
+  - texte: J'avais une phobie de l'avion qui m'empêchait de voyager. Grâce à Benoît,
+      j'ai pu reprendre l'avion sereinement. Un vrai soulagement.
+    auteur: Laura T.
+    sujet: Phobie
+cta_titre: Prêt à franchir le pas ?
+cta_texte: Le premier rendez-vous est le plus important.
