@@ -5,17 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 :root {
-  --color-bg: #FDFBF7;
-  --color-bg-warm: #F5F0E8;
-  --color-text: #2C2A25;
-  --color-text-soft: #5C5850;
-  --color-text-muted: #8A857A;
-  --color-accent: #5B7E6B;
-  --color-accent-light: #7A9E8A;
-  --color-accent-dark: #3D5C4B;
-  --color-accent-bg: #E8F0EB;
-  --color-gold: #B8975A;
-  --color-border: #DDD6C8;
+  --color-bg: #FDFBF7;              /* on garde le crème chaud */
+  --color-bg-warm: #F5EDE2;         /* beige chaud, un peu plus orangé */
+  --color-text: #3A2E26;            /* brun très foncé du logo */
+  --color-text-soft: #6E5848;       /* brun chocolat */
+  --color-text-muted: #8A847A;      /* gris taupe du logo */
+  --color-accent: #5B7FA8;          /* bleu Garonne — accent principal */
+  --color-accent-light: #87A3C2;
+  --color-accent-dark: #3F5E80;
+  --color-accent-bg: #E5EDF5;       /* fond bleu très clair */
+  --color-gold: #E8884E;            /* orange du logo en accent secondaire */
+  --color-border: #E0D7C7;
   --color-white: #FFFFFF;
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'DM Sans', -apple-system, sans-serif;
